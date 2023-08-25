@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body onload="open()">
+    <form class="form-cont">
+      <fieldset class="entrada">
+        <div>
+          <h1>Contato</h1>
+        </div>
+        <div>
+          <label for="name">Nome:</label>
+          <input
+            class="input"
+            type="text"
+            name="nome"
+            id="name"
+            placeholder="Nome ou apelido do contato"
+          />
+        </div>
+        <div>
+          <label for="fone">Celular:</label>
+          <input
+            class="input"
+            type="text"
+            name="celular"
+            id="fone"
+            placeholder="(XX) XXXXX-XXXX"
+          />
+        </div>
+        <button
+          id="adicionar"
+          onclick="inserirContato()"
+          type="button"
+          style="font-size: 30px"
+        >
+          Cadastrar
+        </button>
+      </fieldset>
+      <fieldset class="dados">
+        <div>
+          <h1>Contatos salvos</h1>
+        </div>
+        <table>
+          <thead class="tabela-resultado">
+            <tr class="topo">
+              <td>ID</td>
+              <td>Nome</td>
+              <td>Número</td>
+              <td>ação</td>
+            </tr>
+          </thead>
+          <tbody id="lista-contatos"></tbody>
+        </table>
+      </fieldset>
+    </form>
+    <script src="javascript/formulario.js"></script>
+  </body>
+</html>

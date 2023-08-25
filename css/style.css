@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 150%;
+}
+
+.form-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aqua;
+  border: 3px solid black;
+  padding: 2rem;
+}
+
+body {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.input {
+  border: none;
+  outline: none;
+  padding: 0.2rem;
+  width: 11rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+}
+
+.entrada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid red;
+  border-radius: 1rem;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.dados {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1.5rem;
+  gap: 1rem;
+  border: 4px solid red;
+  border-radius: 1rem;
+}
+.dados .dados .tabela-resultado {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
